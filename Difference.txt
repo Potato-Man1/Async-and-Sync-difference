@@ -1,0 +1,41 @@
+When you run the sync one it should give you this
+
+  start task 1 
+                <---Now between this two lines it has a window of 5 seconds of time. In that time your computer does nothing
+                    Bit of enifficient right? With the asyncio we can told our computer to use the 5 seconds to do something else other than wait.
+  task 1 done! 
+  1
+  1
+  1
+  1
+  1 <--- This ones takes 1 second to be printed each. In total of 10 seconds.
+  1
+  1
+  1
+  1
+  1
+  start task 2 
+               <--This has 4 second of time window which again bit of a waste of time.
+  task 2 done! 
+  [Finished in 19.8s]
+  
+Now if we run that has  asyncio.
+
+  start task 1
+  start task 2 <--- Notice that in async there is a line between the task 1 and task is done!
+  1                 it means that in the 5 seconds window the computer move to another task to do              
+  1                 which is task 2 but task 2 takes 4 seconds to get done. So it searches for other task which
+  1                 is the For loop of ones.
+  task 2 done!
+  1
+  task 1 is done!
+  1
+  1         <--- At this point the only task is not done is the for loop of ones and so it finishes it.
+  1
+  1
+  1
+  1
+  [Finished in 12.8s] <-- Notice that it gets faster
+  
+  Notice how is uses every bit of time it gets to run the code.
+  
