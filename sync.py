@@ -8,12 +8,12 @@ def foo():
 def fee():
     print('start task 1')
     time.sleep(5)
-    print('done task 1!')
+    print('task 1 done!')
     
 def fees():
     print('start task 2')
     time.sleep(4)
-    print('done task 2!')
+    print('task 2 done!')
     
 
 def main():
