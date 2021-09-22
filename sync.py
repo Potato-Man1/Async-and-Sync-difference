@@ -6,14 +6,14 @@ def foo():
         print(1)
 
 def fee():
-    print('start')
+    print('start task 1')
     time.sleep(5)
-    print('done!')
+    print('done task 1!')
     
 def fees():
-    print('starts')
+    print('start task 2')
     time.sleep(4)
-    print('dones!')
+    print('done task 2!')
     
 
 def main():
