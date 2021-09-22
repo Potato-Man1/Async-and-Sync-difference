@@ -1,4 +1,4 @@
-import asyncio, time
+import time
 #The sleep is just copying an action that takes some time to finish
 def foo():
     for i in range(10):
