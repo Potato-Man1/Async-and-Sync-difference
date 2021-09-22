@@ -14,7 +14,7 @@ async def fee():
     #after a certain amont of time this will indicate if it's finished 
     print('task 1 is done!')
     
-async def fee():
+async def fees():
     print('start task 2')
     await asyncio.sleep(4)
     print('task 2 done!')
