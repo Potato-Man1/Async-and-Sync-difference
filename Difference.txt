@@ -38,4 +38,4 @@ Now if we run that has  asyncio.
   [Finished in 12.8s] <-- Notice that it gets faster
   
   Notice how is uses every bit of time it gets to run the code.
-  
+  So using asyncio can make your code runs faster to do many tasks like this one.
